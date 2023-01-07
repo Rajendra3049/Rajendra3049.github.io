@@ -22,7 +22,7 @@
 }
 
 /* media  */
-@media (max-width: 940px) {
+@media (max-width: 720px) {
   .flex_box {
     display: grid;
     grid-template-rows: repeat(2, 1fr);

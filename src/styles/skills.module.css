@@ -90,7 +90,7 @@
   margin: auto;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 720px) {
   .outer_box {
     border: 0px solid red;
     width: 70%;

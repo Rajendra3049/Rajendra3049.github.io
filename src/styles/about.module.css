@@ -193,7 +193,7 @@
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 720px) {
   .homepage {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

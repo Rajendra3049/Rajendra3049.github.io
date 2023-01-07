@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Skills from "./skills";
 import {
   Box,
   Flex,
@@ -50,7 +51,7 @@ export default function Navbar() {
 
   return (
     <Box>
-      <Box className={navbar ? style.outer_box_active : style.outer_box_active}>
+      <Box className={navbar ? style.outer_box_active : style.outer_box}>
         <Flex className={style.main_box}>
           <IconButton
             marginRight="10px"
