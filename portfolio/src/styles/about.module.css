@@ -72,6 +72,7 @@
   font-size: large;
   color: white;
   margin-right: 90px;
+  text-align: start;
 }
 .name > button {
   padding: 20px;

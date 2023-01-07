@@ -53,6 +53,7 @@ export default function Navbar() {
       <Box className={navbar ? style.outer_box_active : style.outer_box_active}>
         <Flex className={style.main_box}>
           <IconButton
+            marginRight="10px"
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
