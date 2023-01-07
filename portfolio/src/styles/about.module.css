@@ -1,0 +1,254 @@
+.homepage {
+  height: 600px;
+  display: flex;
+  padding-top: 80px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(33, 71, 109) 0%,
+    rgb(38, 104, 170) 25%
+  );
+  animation: AnimateBG 20s ease infinite;
+}
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.homepage > div:nth-child(1) {
+  width: 40%;
+}
+.homepage > div:nth-child(2) {
+  width: 70%;
+}
+
+.image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.image > img {
+  width: 70%;
+  border-radius: 100%;
+}
+
+.name {
+  display: block;
+}
+
+.name > h1:nth-child(1) {
+  padding-top: 50px;
+}
+
+.name > h1:nth-child(1),
+.name > h1:nth-child(2) {
+  font-size: 60px;
+  margin: 20px;
+}
+
+.name > h1:nth-child(3) {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.name > h1 {
+  color: white;
+}
+.name > p {
+  margin: 20px;
+  font-size: large;
+  color: white;
+  margin-right: 90px;
+}
+.name > button {
+  padding: 20px;
+  margin: 20px;
+  width: 120px;
+  font-size: large;
+  border: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.name > button:hover {
+  color: red;
+}
+/* button  */
+.ResumeBtn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.ResumeBtn:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.ResumeBtn span {
+  position: absolute;
+  display: block;
+}
+
+.ResumeBtn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.ResumeBtn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.ResumeBtn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.ResumeBtn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+@media (max-width: 940px) {
+  .homepage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    padding-top: 70px;
+    height: auto;
+  }
+  .homepage > div {
+    width: 100%;
+    padding-top: 0px;
+    margin: auto;
+  }
+  .homepage > div:nth-child(1) {
+    /* border: 1px solid green; */
+    width: 100%;
+    margin-top: 10px;
+    /* display: flex; */
+    /* background-image: url("../img/Blue\ Aqua\ Minimalist\ Sea\ Soothes\ the\ Soul\ Quote\ Instagram\ Post.png"); */
+  }
+
+  .homepage > div:nth-child(1) > img {
+    width: 50%;
+  }
+  .homepage > div:nth-child(2) {
+    /* border: 1px solid green; */
+    width: 100%;
+    /* display: flex; */
+  }
+
+  .image > img {
+    width: 70%;
+    border-radius: 100%;
+  }
+  .name > h1:nth-child(1) {
+    padding-top: 0px;
+  }
+
+  .name > h1:nth-child(1),
+  .name > h1:nth-child(2) {
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 10px;
+  }
+
+  .name > h1:nth-child(3) {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .name > p {
+    margin: 10px;
+    font-size: medium;
+    color: white;
+    margin-right: 5px;
+  }
+  .ResumeBtn {
+    margin-top: -1px;
+    margin-bottom: 10px;
+  }
+}

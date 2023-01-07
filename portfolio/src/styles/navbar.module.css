@@ -1,0 +1,36 @@
+.outer_box {
+  border: 0px solid red;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+.outer_box_active {
+  border: 0px solid rgb(0, 213, 255);
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.main_box {
+  border: 0px solid red;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.content_box {
+  border: 0px solid blue;
+  width: 40%;
+  align-items: center;
+  font-size: 18px;
+  justify-content: space-evenly;
+  margin-right: 2px;
+}
+.resume_btn1 {
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: 450;
+}
