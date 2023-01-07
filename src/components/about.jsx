@@ -1,7 +1,12 @@
 import React from "react";
 import style from "../styles/about.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className={style.homepage}>
       <div className={style.image}>
