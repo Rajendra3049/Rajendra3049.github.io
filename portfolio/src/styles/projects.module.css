@@ -1,0 +1,12 @@
+.outer_box {
+  border: 0px solid red;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+.main_heading {
+  border: 0px solid blue;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}

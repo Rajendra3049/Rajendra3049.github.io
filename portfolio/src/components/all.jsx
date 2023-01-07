@@ -1,5 +1,7 @@
 import About from "./about";
 import Skills from "./skills";
+import GithubStats from "./github_stats";
+import Projects from "./project";
 
 import Navbar from "./navbar";
 export default function All() {
@@ -7,6 +9,8 @@ export default function All() {
     <>
       <About />
       <Skills />
+      <GithubStats />
+      <Projects />
     </>
   );
 }
