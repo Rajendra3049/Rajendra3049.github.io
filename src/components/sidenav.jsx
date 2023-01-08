@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from "react";
-import Skills from "./skills";
-
+import React, { useEffect, useState, ReactNode } from "react";
 import {
   Box,
   Flex,
+  Avatar,
   HStack,
   Link,
   IconButton,
   Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
-  Center,
   useColorMode,
-  border,
 } from "@chakra-ui/react";
-
 import {
   HamburgerIcon,
   CloseIcon,
@@ -40,12 +41,15 @@ const NavLink = ({ children }) => (
   </Link>
 );
 
-export default function Navbar() {
+export default function Nav() {
+  // dark mode
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  console.log(colorMode);
-  const [navbar, setNavbar] = useState(false);
 
+  // responsive
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  //   on scroll color chnage
+  const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 200) {
       setNavbar(true);
@@ -53,6 +57,7 @@ export default function Navbar() {
       setNavbar(false);
     }
   };
+
   useEffect(() => {
     changeBackground();
     // adding the event when scroll change background
@@ -60,51 +65,66 @@ export default function Navbar() {
   });
 
   return (
-    <Box>
+    <>
       <Box
         className={navbar ? style.outer_box_active : style.outer_box}
-        style={{
-          background: navbar
-            ? colorMode == "light"
-              ? "white"
-              : "black"
-            : "transparent",
-        }}>
-        {/* {isOpen ? null : (
-          <Button
-            onClick={toggleColorMode}
-            className={style.ColorMode}
-            style={{
-              background: "transparent",
-              marginTop: "10px",
-              fontSize: "20px",
-            }}>
-            {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          </Button>
-        )} */}
-
-        <Flex className={style.main_box}>
+        px={4}
+        backgroundColor={
+          isOpen ? (colorMode === "light" ? "white" : "black") : "transparent"
+        }>
+        <Flex
+          h={16}
+          alignItems={"center"}
+          style={{
+            background: navbar
+              ? colorMode == "light"
+                ? "white"
+                : "black"
+              : "transparent",
+          }}
+          justifyContent={"space-between"}>
           <IconButton
+            marginLeft={"35px"}
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack className={style.content_box}>
+          <HStack
+            spacing={8}
+            alignItems={"center"}
+            className={style.content_box}>
             <HStack
               as={"nav"}
-              spacing={10}
+              spacing={4}
               display={{ base: "none", md: "flex" }}>
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
             </HStack>
           </HStack>
+          <Flex alignItems={"center"}>
+            <Button
+              onClick={toggleColorMode}
+              className={style.ColorMode}
+              style={{
+                background: "transparent",
+                marginTop: "5px",
+                fontSize: "25px",
+                marginRight: "35px",
+              }}>
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
+          </Flex>
         </Flex>
 
         {isOpen ? (
-          <Box display={{ md: "none" }} style={{ border: "1px solid red" }}>
+          <Box
+            pb={4}
+            display={{ md: "none" }}
+            paddingLeft={"30px"}
+            backgroundColor={colorMode === "light" ? "white" : "black"}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
@@ -113,6 +133,6 @@ export default function Navbar() {
           </Box>
         ) : null}
       </Box>
-    </Box>
+    </>
   );
 }
