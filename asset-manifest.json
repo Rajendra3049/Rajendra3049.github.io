@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.39beb868.css",
-    "main.js": "/static/js/main.08f05051.js",
+    "main.css": "/static/css/main.353e4852.css",
+    "main.js": "/static/js/main.0fde84dc.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Rajendra_Patel_Resume.pdf": "/static/media/Rajendra_Patel_Resume.43680b0292017930a161.pdf",
     "index.html": "/index.html",
-    "main.39beb868.css.map": "/static/css/main.39beb868.css.map",
-    "main.08f05051.js.map": "/static/js/main.08f05051.js.map",
+    "main.353e4852.css.map": "/static/css/main.353e4852.css.map",
+    "main.0fde84dc.js.map": "/static/js/main.0fde84dc.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39beb868.css",
-    "static/js/main.08f05051.js"
+    "static/css/main.353e4852.css",
+    "static/js/main.0fde84dc.js"
   ]
 }
