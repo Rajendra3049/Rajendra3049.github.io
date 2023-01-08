@@ -11,9 +11,16 @@ import {
   useColorModeValue,
   Stack,
   Center,
+  useColorMode,
 } from "@chakra-ui/react";
 
-import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
+import {
+  HamburgerIcon,
+  CloseIcon,
+  AddIcon,
+  MoonIcon,
+  SunIcon,
+} from "@chakra-ui/icons";
 import style from "../styles/navbar.module.css";
 const Links = ["Home", "About", "Skills", "Projects", "Contact"];
 
@@ -32,8 +39,9 @@ const NavLink = ({ children }) => (
 );
 
 export default function Navbar() {
+  const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  console.log(colorMode);
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -51,10 +59,28 @@ export default function Navbar() {
 
   return (
     <Box>
-      <Box className={navbar ? style.outer_box_active : style.outer_box}>
+      <Box
+        className={navbar ? style.outer_box_active : style.outer_box}
+        style={{
+          background: navbar
+            ? colorMode == "light"
+              ? "white"
+              : "black"
+            : "transparent",
+        }}>
+        <Button
+          onClick={toggleColorMode}
+          className={style.ColorMode}
+          style={{
+            background: "transparent",
+            marginTop: "10px",
+            fontSize: "20px",
+          }}>
+          {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+        </Button>
         <Flex className={style.main_box}>
           <IconButton
-            marginRight="10px"
+            marginRight="25px"
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}

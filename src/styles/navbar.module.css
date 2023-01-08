@@ -1,9 +1,17 @@
+/* .ColorMode {
+  border: 1px solid red;
+  height: 70px;
+  align-items: center;
+  background-color: transparent;
+} */
 .outer_box {
   border: 0px solid red;
   top: 0;
   position: fixed;
   width: 100%;
   z-index: 100;
+  display: flex;
+  justify-content: space-around;
 }
 .outer_box_active {
   border: 0px solid rgb(0, 213, 255);
@@ -14,6 +22,8 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  display: flex;
+  justify-content: space-around;
 }
 
 .main_box {
@@ -22,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
+  width: 80%;
 }
 .content_box {
   border: 0px solid blue;

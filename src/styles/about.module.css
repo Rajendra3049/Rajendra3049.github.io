@@ -72,7 +72,7 @@
   font-size: large;
   color: white;
   margin-right: 90px;
-  text-align: start;
+  text-align: justify;
 }
 .name > button {
   padding: 20px;
@@ -195,7 +195,7 @@
 
 @media (max-width: 720px) {
   .homepage {
-    border: 1px solid red;
+    border: 0px solid red;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;

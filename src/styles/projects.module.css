@@ -9,4 +9,69 @@
   font-size: 40px;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 35px;
+}
+
+.project_img_box {
+  border: 1px solid black;
+  padding: 10px;
+  float: left;
+  width: 48%;
+  margin-bottom: 30px;
+}
+.project_img_box_right {
+  border: 1px solid black;
+  padding: 10px;
+  float: right;
+  width: 48%;
+  margin-bottom: 30px;
+}
+.project_description_box {
+  text-align: center;
+  float: right;
+  width: 48%;
+}
+.project_description_box h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.project_description_box_left {
+  text-align: center;
+  float: left;
+  width: 48%;
+}
+.project_description_box_left h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.project_techStack {
+  border: 0px solid red;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.project_description {
+  text-align: justify;
+}
+.project_button_box button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px;
+  color: #1488cc;
+  background-color: transparent;
+  border: 1px solid #1488cc;
+  border-radius: 10px;
+  text-align: center;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out,
+    border-color 0.3s ease-out;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
