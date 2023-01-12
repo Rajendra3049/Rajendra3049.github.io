@@ -2,50 +2,43 @@
   border: 0px solid red;
   width: 70%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 3%;
 }
 .main_heading {
   border: 0px solid blue;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 2%;
 }
 
-.project_img_box {
-  border: 1px solid black;
-  padding: 10px;
-  float: left;
-  width: 48%;
-  margin-bottom: 30px;
+.project {
+  display: flex;
+  justify-content: space-between;
+  border: 0px solid blue;
 }
-.project_img_box_right {
-  border: 1px solid black;
+
+/* img left description right */
+.project_img_box {
+  border: 0px solid black;
   padding: 10px;
-  float: right;
-  width: 48%;
-  margin-bottom: 30px;
+  width: 50%;
+  padding-bottom: 6%;
+  margin-top: 2%;
+}
+.project_img_box img {
+  width: 100%;
 }
 .project_description_box {
+  border: 0px solid rgb(0, 255, 98);
   text-align: center;
-  float: right;
   width: 48%;
+  margin-top: 2%;
 }
 .project_description_box h1 {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.project_description_box_left {
-  text-align: center;
-  float: left;
-  width: 48%;
-}
-.project_description_box_left h1 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
 }
 .project_techStack {
   border: 0px solid red;
@@ -53,14 +46,25 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 1%;
+}
+.project_techStack_6 {
+  border: 0px solid red;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 1%;
 }
 .project_description {
   text-align: justify;
+  border: 0px solid blueviolet;
+  margin-bottom: 3%;
+  margin-top: 8%;
 }
 .project_button_box button {
   display: inline-block;
-  margin: 10px 0;
+  margin: 10px 5px;
   padding: 5px;
   color: #1488cc;
   background-color: transparent;
@@ -72,6 +76,4 @@
   cursor: pointer;
   transition: color 0.3s ease-out, background-color 0.3s ease-out,
     border-color 0.3s ease-out;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
