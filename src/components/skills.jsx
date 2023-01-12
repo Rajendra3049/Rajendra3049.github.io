@@ -22,7 +22,13 @@ export default function Skills() {
                 <img src="./ts.png" alt="TypeScript" />
               </div>
             </div>
-            <p style={{ width: "90%", margin: "auto", textAlign: "center" }}>
+            <p
+              style={{
+                width: "90%",
+                margin: "auto",
+                textAlign: "center",
+                marginTop: "10%",
+              }}>
               My favorite languages for software engineering
             </p>
           </div>
@@ -44,7 +50,13 @@ export default function Skills() {
                 <img src="./next.png" alt="Next.js" />
               </div>
             </div>
-            <p style={{ width: "90%", margin: "auto", textAlign: "center" }}>
+            <p
+              style={{
+                width: "90%",
+                margin: "auto",
+                textAlign: "center",
+                marginTop: "10%",
+              }}>
               My preferred technologies for front-end web development and
               component design.
             </p>
@@ -60,7 +72,13 @@ export default function Skills() {
                 <img src="./mongodb.png" alt="mongodb" />
               </div>
             </div>
-            <p style={{ width: "90%", margin: "auto", textAlign: "center" }}>
+            <p
+              style={{
+                width: "90%",
+                margin: "auto",
+                textAlign: "center",
+                marginTop: "10%",
+              }}>
               My preferred technologies for back-end web programming and
               database architecture.
             </p>
@@ -76,7 +94,13 @@ export default function Skills() {
                 <img src="./github.png" alt="github" />
               </div>
             </div>
-            <p style={{ width: "90%", margin: "auto", textAlign: "center" }}>
+            <p
+              style={{
+                width: "90%",
+                margin: "auto",
+                textAlign: "center",
+                marginTop: "10%",
+              }}>
               My favorite tools for version control, code editing, and container
               orchestration.
             </p>

@@ -43,7 +43,7 @@ const NavLink = ({ children }) => (
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  console.log(colorMode);
+
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {

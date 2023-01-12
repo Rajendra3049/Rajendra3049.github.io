@@ -50,8 +50,9 @@ export default function Nav() {
 
   //   on scroll color chnage
   const [navbar, setNavbar] = useState(false);
+
   const changeBackground = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 100) {
       setNavbar(true);
     } else {
       setNavbar(false);

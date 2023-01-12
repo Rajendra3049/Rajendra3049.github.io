@@ -12,6 +12,7 @@
   margin-bottom: 35px;
 }
 .flex_box {
+  border: 0px solid blue;
   display: flex;
   justify-content: space-between;
 }
