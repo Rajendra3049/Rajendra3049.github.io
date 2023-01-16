@@ -126,14 +126,14 @@
   }
   .project_techStack {
     border: 0px solid red;
-    width: 35%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin: auto;
   }
   .project_techStack_6 {
     border: 0px solid red;
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     margin: auto;
