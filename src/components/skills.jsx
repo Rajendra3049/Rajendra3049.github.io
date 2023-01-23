@@ -3,6 +3,8 @@ import style from "../styles/skills.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import InfiniteScroll from "./infinite_scroll/skills_scroll";
+
 export default function Skills() {
   React.useEffect(() => {
     AOS.init();
@@ -11,6 +13,7 @@ export default function Skills() {
     <>
       <div className={style.outer_box}>
         <h1 className={style.main_heading}>Technical Skills</h1>
+        {/* <InfiniteScroll /> */}
         <div className={style.main_box}>
           <div>
             <h1>Languages</h1>

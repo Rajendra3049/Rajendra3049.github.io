@@ -193,6 +193,66 @@ export default function Projects() {
               </div>
             </div>
           </div>
+          {/* project no 4 */}
+          <div className={style.project}>
+            <div className={style.project_img_box} data-aos="fade-left">
+              <img src="./wishkart.png" alt="" />
+            </div>
+            <div className={style.project_description_box}>
+              <h1>WishKart.com</h1>
+
+              <div className={style.project_techStack_6}>
+                <img
+                  height="32"
+                  width="32"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                />
+
+                <img
+                  height="32"
+                  width="32"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                />
+              </div>
+              <p className={style.project_description}>
+                This was a group project. The Tech stack which we used to create
+                this website are Javascript ,React, Redux and also used Chakra
+                for UI. My work was here to create Sign-In/Sign-Out with backend
+                authentication, Admin Side to manage website.This was a
+                collaborative project built by team of 5 members in 5 days.
+              </p>
+              <div className={style.project_button_box}>
+                <a href="https://wish-kart.vercel.app/" target="_blank">
+                  <button>Check it out!</button>
+                </a>
+                <a
+                  href="https://github.com/Rajendra3049/Wishkart"
+                  target="_blank">
+                  <button>Github Link</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       ) : (
         // laptop
@@ -360,6 +420,66 @@ export default function Projects() {
                   <button>Github Link</button>
                 </a>
               </div>
+            </div>
+          </div>
+
+          {/* project no 4 */}
+          <div className={style.project}>
+            <div className={style.project_description_box}>
+              <h1>WishKart.com</h1>
+              <div className={style.project_techStack_6}>
+                <img
+                  height="32"
+                  width="32"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                />
+
+                <img
+                  height="32"
+                  width="32"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+                />
+                <img
+                  height="32"
+                  width="32"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                />
+              </div>
+              <p className={style.project_description}>
+                This was a group project. The Tech stack which we used to create
+                this website are Javascript ,React, Redux and also used Chakra
+                for UI. My work was here to create Sign-In/Sign-Out with backend
+                authentication, Admin Side to manage website.This was a
+                collaborative project built by team of 5 members in 5 days.
+              </p>
+              <div className={style.project_button_box}>
+                <a href="https://wish-kart.vercel.app/" target="_blank">
+                  <button>Check it out!</button>
+                </a>
+                <a
+                  href="https://github.com/Rajendra3049/Wishkart"
+                  target="_blank">
+                  <button>Github Link</button>
+                </a>
+              </div>
+            </div>
+            <div className={style.project_img_box} data-aos="fade-left">
+              <img src="./wishkart.png" alt="" />
             </div>
           </div>
         </div>

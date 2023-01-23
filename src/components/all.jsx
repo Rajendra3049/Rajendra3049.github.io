@@ -1,7 +1,9 @@
+import React, { Fragment } from "react";
 import About from "./about";
 import Skills from "./skills";
 import GithubStats from "./github_stats";
 import Projects from "./project";
+import Contact from "./contactForm/Contact.jsx";
 
 import Navbar from "./navbar";
 export default function All() {
@@ -11,6 +13,9 @@ export default function All() {
       <Skills />
       <GithubStats />
       <Projects />
+      <Fragment>
+        <Contact />
+      </Fragment>
     </>
   );
 }

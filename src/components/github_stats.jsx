@@ -36,6 +36,15 @@ export default function GithubStats() {
           <GitHubCalendar username="rajendra3049" />
         </div>
       </div>
+      <div className={style.outer_box}>
+        <h1 className={style.main_heading}>My Github Calender</h1>
+        <div data-aos="fade-up" className={style.Calendar}>
+          <img
+            src="https://github-readme-activity-graph.cyclic.app/graph?username=Rajendra3049&theme=gotham"
+            alt=""
+          />
+        </div>
+      </div>
     </>
   );
 }
