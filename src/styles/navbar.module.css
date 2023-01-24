@@ -9,6 +9,7 @@ body {
 }
 .link:hover {
   background-color: white;
+  color: red;
 }
 .outer_box {
   border: 0px solid red;
