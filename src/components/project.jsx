@@ -22,7 +22,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className={style.outer_box}>
+    <div id="Projects" className={style.outer_box}>
       <h1 className={style.main_heading}>Featured Projects</h1>
 
       {windowSize.innerWidth <= 720 ? (

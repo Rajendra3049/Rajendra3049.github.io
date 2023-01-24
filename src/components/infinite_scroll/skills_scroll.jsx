@@ -1,5 +1,5 @@
-import React from "https://cdn.skypack.dev/react";
-import ReactDOM from "https://cdn.skypack.dev/react-dom";
+import React from "react";
+import { ReactDOM } from "react";
 import "./skills_scroll.css";
 
 const COLORS = [
@@ -17,6 +17,7 @@ const TAGS = [
   "JavaScript",
   "Typescript",
   "React",
+  "Redux",
   "Next.js",
   "Chakra Ui",
   "Express js",

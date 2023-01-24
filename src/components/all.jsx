@@ -4,8 +4,6 @@ import Skills from "./skills";
 import GithubStats from "./github_stats";
 import Projects from "./project";
 import Contact from "./contactForm/Contact.jsx";
-
-import Navbar from "./navbar";
 export default function All() {
   return (
     <>

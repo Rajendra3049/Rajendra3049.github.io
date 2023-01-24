@@ -3,7 +3,7 @@ import style from "../styles/about.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Resume from "../resume/Rajendra_Patel_Resume.pdf";
-import Name from "./name/Name";
+
 import Typewriter from "typewriter-effect";
 
 export default function About() {
@@ -12,7 +12,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className={style.homepage}>
+    <div id="About" className={style.homepage}>
       <div className={style.image}>
         <img src="./profile.jpg" alt="" />
       </div>

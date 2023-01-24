@@ -1,58 +1,37 @@
 import React, { useEffect, useState } from "react";
-import Skills from "./skills";
-
 import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   Button,
   useDisclosure,
-  useColorModeValue,
   Stack,
-  Center,
   useColorMode,
-  border,
 } from "@chakra-ui/react";
-
-import {
-  HamburgerIcon,
-  CloseIcon,
-  AddIcon,
-  MoonIcon,
-  SunIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import style from "../styles/navbar.module.css";
-const Links = ["Home", "About", "Skills", "Projects", "Contact"];
-
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700"),
-    }}
-    href={"#"}>
-    {children}
-  </Link>
-);
+import { Link } from "react-scroll";
+const Links = ["About", "Skills", "Projects", "Contact"];
 
 export default function Navbar() {
+  // dark mode
   const { colorMode, toggleColorMode } = useColorMode();
+
+  // responsive
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  //   on scroll color change
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 100) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
   };
+
   useEffect(() => {
     changeBackground();
     // adding the event when scroll change background
@@ -60,59 +39,88 @@ export default function Navbar() {
   });
 
   return (
-    <Box>
+    <>
       <Box
         className={navbar ? style.outer_box_active : style.outer_box}
-        style={{
-          background: navbar
-            ? colorMode == "light"
-              ? "white"
-              : "black"
-            : "transparent",
-        }}>
-        {/* {isOpen ? null : (
-          <Button
-            onClick={toggleColorMode}
-            className={style.ColorMode}
-            style={{
-              background: "transparent",
-              marginTop: "10px",
-              fontSize: "20px",
-            }}>
-            {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          </Button>
-        )} */}
-
-        <Flex className={style.main_box}>
+        px={4}
+        backgroundColor={
+          isOpen ? (colorMode === "light" ? "white" : "black") : "transparent"
+        }>
+        <Flex
+          h={16}
+          alignItems={"center"}
+          style={{
+            background: navbar
+              ? colorMode === "light"
+                ? "white"
+                : "black"
+              : "transparent",
+          }}
+          justifyContent={"space-between"}>
           <IconButton
+            marginLeft={"35px"}
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack className={style.content_box}>
+          <HStack
+            spacing={18}
+            alignItems={"center"}
+            className={style.content_box}>
             <HStack
               as={"nav"}
-              spacing={10}
+              spacing={8}
               display={{ base: "none", md: "flex" }}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Link
+                  to={link}
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  key={link}>
+                  <div className={style.link}> {link}</div>
+                </Link>
               ))}
             </HStack>
           </HStack>
+          <Flex alignItems={"center"}>
+            <Button
+              onClick={toggleColorMode}
+              className={style.ColorMode}
+              style={{
+                background: "transparent",
+                marginTop: "5px",
+                fontSize: "25px",
+                marginRight: "35px",
+              }}>
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
+          </Flex>
         </Flex>
 
         {isOpen ? (
-          <Box display={{ md: "none" }} style={{ border: "1px solid red" }}>
+          <Box
+            pb={4}
+            display={{ md: "none" }}
+            paddingLeft={"30px"}
+            backgroundColor={colorMode === "light" ? "white" : "black"}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Link
+                  to={link}
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  key={link}>
+                  {link}
+                </Link>
               ))}
             </Stack>
           </Box>
         ) : null}
       </Box>
-    </Box>
+    </>
   );
 }
