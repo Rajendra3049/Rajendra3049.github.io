@@ -8,7 +8,6 @@ body {
   border-radius: 5px;
 }
 .link:hover {
-  background-color: white;
   color: red;
 }
 .outer_box {
