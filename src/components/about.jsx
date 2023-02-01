@@ -2,6 +2,8 @@ import React from "react";
 import style from "../styles/about.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 import Resume from "../resume/Rajendra_Patel_Resume.pdf";
 
 import Typewriter from "typewriter-effect";
@@ -62,16 +64,35 @@ export default function About() {
           requirements and work in a fast paced environment. Dedicated to
           providing excellent customer service and meeting project deadlines.
         </p>
-        <a
-          href={Resume}
-          className={style.ResumeBtn}
-          download="Rajendra_Patel_Resume">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Resume
-        </a>
+        <div>
+          {" "}
+          <a
+            href={Resume}
+            className={style.ResumeBtn}
+            download="Rajendra_Patel_Resume">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Resume
+          </a>
+          {/*  */}
+          <a
+            href="https://github.com/Rajendra3049"
+            className={style.githubBtn}
+            target="_blank"
+            rel="noreferrer">
+            <AiFillGithub />
+          </a>
+          {/*  */}
+          <a
+            href="https://www.linkedin.com/in/rajendra-patel-308237238/"
+            className={style.githubBtn}
+            target="_blank"
+            rel="noreferrer">
+            <FaLinkedinIn />
+          </a>
+        </div>
       </div>
     </div>
   );

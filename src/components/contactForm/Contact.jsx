@@ -5,7 +5,9 @@ const Contact = () => {
   return (
     <div id="Contact">
       {" "}
-      <Fragment>
+      <form
+        action="https://getform.io/f/61d3e0a7-0201-4c30-b292-3f6cbaad847e"
+        method="POST">
         <section className="contact">
           <div className="contact-heading">
             <h2>Contact Me </h2>
@@ -76,7 +78,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
-      </Fragment>
+      </form>
     </div>
   );
 };

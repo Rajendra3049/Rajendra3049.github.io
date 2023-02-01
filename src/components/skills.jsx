@@ -3,8 +3,6 @@ import style from "../styles/skills.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// import InfiniteScroll from "./infinite_scroll/skills_scroll";
-
 export default function Skills() {
   React.useEffect(() => {
     AOS.init();
@@ -108,9 +106,6 @@ export default function Skills() {
             </p>
           </div>
         </div>
-        {/* <div>
-          <InfiniteScroll />
-        </div> */}
       </div>
     </>
   );

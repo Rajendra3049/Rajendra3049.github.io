@@ -92,6 +92,7 @@
   margin-top: 40px;
   letter-spacing: 4px;
   margin-bottom: 3%;
+  margin-right: 10px;
 }
 
 .ResumeBtn:hover {
@@ -114,6 +115,31 @@
   height: 2px;
   background: linear-gradient(90deg, transparent, #03e9f4);
   animation: btn-anim1 1s linear infinite;
+}
+
+.githubBtn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #19191a;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 3%;
+}
+
+.githubBtn:hover {
+  background: #000505;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 @keyframes btn-anim1 {

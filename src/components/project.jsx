@@ -43,24 +43,27 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
-                <a href="">
-                  <img
-                    height="32"
-                    width="32"
-                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                  />
-                </a>
+
+                <img
+                  height="32"
+                  width="32"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="tech-stack"
+                />
               </div>
               <p className={style.project_description}>
                 This was an individual project.Cricket.com website is a
@@ -70,13 +73,17 @@ export default function Projects() {
               <div className={style.project_button_box}>
                 <a
                   href="https://masai-unit2-construct-week-project.netlify.app/"
-                  target="_blank">
-                  <button>Check it out!</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/Cricket.com-Clone"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>
@@ -93,24 +100,27 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
-                <a href="">
-                  <img
-                    height="32"
-                    width="32"
-                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                  />
-                </a>
+
+                <img
+                  height="32"
+                  width="32"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="tech-stack"
+                />
               </div>
               <p className={style.project_description}>
                 This was a group project.We have created these website with the
@@ -122,13 +132,17 @@ export default function Projects() {
               <div className={style.project_button_box}>
                 <a
                   href="https://lifestylestore-com-clone.vercel.app/"
-                  target="_blank">
-                  <button>Check it out!</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/Lifestylestore.com-Clone"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>
@@ -145,32 +159,38 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
 
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="tech-stack"
                 />
               </div>
               <p className={style.project_description}>
@@ -182,13 +202,17 @@ export default function Projects() {
               <div className={style.project_button_box}>
                 <a
                   href="https://dispensable-underwear-8715-hxqh.vercel.app/"
-                  target="_blank">
-                  <button>Check it out!</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/PharmEasy.com-Clone"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>
@@ -206,32 +230,38 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
 
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="tech-stack"
                 />
               </div>
               <p className={style.project_description}>
@@ -242,13 +272,19 @@ export default function Projects() {
                 collaborative project built by team of 5 members in 5 days.
               </p>
               <div className={style.project_button_box}>
-                <a href="https://wish-kart.vercel.app/" target="_blank">
-                  <button>Check it out!</button>
+                <a
+                  href="https://wish-kart.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/Wishkart"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>
@@ -272,22 +308,26 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
                 <a href="">
                   <img
                     height="32"
                     width="32"
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="tech-stack"
                   />
                 </a>
               </div>
@@ -299,13 +339,17 @@ export default function Projects() {
               <div className={style.project_button_box}>
                 <a
                   href="https://masai-unit2-construct-week-project.netlify.app/"
-                  target="_blank">
-                  <button>Check it out!</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/Cricket.com-Clone"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>
@@ -319,22 +363,26 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
                 <a href="">
                   <img
                     height="32"
                     width="32"
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="tech-stack"
                   />
                 </a>
               </div>
@@ -348,13 +396,17 @@ export default function Projects() {
               <div className={style.project_button_box}>
                 <a
                   href="https://lifestylestore-com-clone.vercel.app/"
-                  target="_blank">
-                  <button>Check it out!</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/Lifestylestore.com-Clone"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>
@@ -374,32 +426,38 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
 
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="tech-stack"
                 />
               </div>
               <p className={style.project_description}>
@@ -411,13 +469,17 @@ export default function Projects() {
               <div className={style.project_button_box}>
                 <a
                   href="https://dispensable-underwear-8715-hxqh.vercel.app/"
-                  target="_blank">
-                  <button>Check it out!</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/PharmEasy.com-Clone"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>
@@ -432,32 +494,38 @@ export default function Projects() {
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="tech-stack"
                 />
 
                 <img
                   height="32"
                   width="32"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+                  alt="tech-stack"
                 />
                 <img
                   height="32"
                   width="32"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="tech-stack"
                 />
               </div>
               <p className={style.project_description}>
@@ -468,13 +536,19 @@ export default function Projects() {
                 collaborative project built by team of 5 members in 5 days.
               </p>
               <div className={style.project_button_box}>
-                <a href="https://wish-kart.vercel.app/" target="_blank">
-                  <button>Check it out!</button>
+                <a
+                  href="https://wish-kart.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>
+                    Check it out!
+                  </button>
                 </a>
                 <a
                   href="https://github.com/Rajendra3049/Wishkart"
-                  target="_blank">
-                  <button>Github Link</button>
+                  target="_blank"
+                  rel="noreferrer">
+                  <button className={style.shrink_on_hover}>Github Link</button>
                 </a>
               </div>
             </div>

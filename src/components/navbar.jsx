@@ -11,8 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import style from "../styles/navbar.module.css";
+import styles from "../styles/about.module.css";
 import { Link } from "react-scroll";
-const Links = ["About", "Skills", "Projects", "Contact"];
+import Resume from "../resume/Rajendra_Patel_Resume.pdf";
+
+const Links = ["About", "Skills", "Projects", "Contact", "Resume"];
 
 export default function Navbar() {
   // dark mode
@@ -74,14 +77,35 @@ export default function Navbar() {
               spacing={8}
               display={{ base: "none", md: "flex" }}>
               {Links.map((link) => (
-                <Link
-                  to={link}
-                  smooth={true}
-                  duration={500}
-                  offset={-50}
-                  key={link}>
-                  <div className={style.link}> {link}</div>
-                </Link>
+                <>
+                  {link === "Resume" ? (
+                    <>
+                      <a
+                        onClick={() => {
+                          window.open(
+                            "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                            "blank"
+                          );
+                        }}
+                        href={Resume}
+                        download="Rajendra_Patel_Resume"
+                        key={link}>
+                        <div className={style.link}> {link}</div>
+                      </a>
+                    </>
+                  ) : (
+                    <>
+                      <Link
+                        to={link}
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        key={link}>
+                        <div className={style.link}> {link}</div>
+                      </Link>
+                    </>
+                  )}
+                </>
               ))}
             </HStack>
           </HStack>
@@ -108,14 +132,35 @@ export default function Navbar() {
             backgroundColor={colorMode === "light" ? "white" : "black"}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <Link
-                  to={link}
-                  smooth={true}
-                  duration={500}
-                  offset={-50}
-                  key={link}>
-                  {link}
-                </Link>
+                <>
+                  {link === "Resume" ? (
+                    <>
+                      <a
+                        onClick={() => {
+                          window.open(
+                            "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                            "blank"
+                          );
+                        }}
+                        href={Resume}
+                        download="Rajendra_Patel_Resume"
+                        key={link}>
+                        <div className={style.link}> {link}</div>
+                      </a>
+                    </>
+                  ) : (
+                    <>
+                      <Link
+                        to={link}
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        key={link}>
+                        <div className={style.link}> {link}</div>
+                      </Link>
+                    </>
+                  )}
+                </>
               ))}
             </Stack>
           </Box>
