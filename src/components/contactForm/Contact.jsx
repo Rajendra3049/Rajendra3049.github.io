@@ -54,7 +54,7 @@ const Contact = () => {
                     <input type="text" name="name" placeholder="Name" />
                     <input type="email" name="email" placeholder="Email" />
                     <textarea
-                      placeholder="Comment"
+                      placeholder="Message"
                       type="text"
                       name="message"></textarea>
                     <button type="submit" className="site-btn">
