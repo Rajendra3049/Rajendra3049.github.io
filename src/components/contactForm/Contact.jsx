@@ -5,9 +5,7 @@ const Contact = () => {
   return (
     <div id="Contact">
       {" "}
-      <form
-        action="https://getform.io/f/61d3e0a7-0201-4c30-b292-3f6cbaad847e"
-        method="POST">
+      <Fragment>
         <section className="contact">
           <div className="contact-heading">
             <h2>Contact Me </h2>
@@ -50,10 +48,15 @@ const Contact = () => {
 
               <div className="column">
                 <div className="contact-form">
-                  <form action="#">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <textarea placeholder="Comment "></textarea>
+                  <form
+                    action="https://getform.io/f/61d3e0a7-0201-4c30-b292-3f6cbaad847e"
+                    method="POST">
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <textarea
+                      placeholder="Comment"
+                      type="text"
+                      name="message"></textarea>
                     <button type="submit" className="site-btn">
                       {" "}
                       Send Message 
@@ -78,7 +81,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
-      </form>
+      </Fragment>
     </div>
   );
 };
