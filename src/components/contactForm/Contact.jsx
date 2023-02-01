@@ -57,7 +57,10 @@ const Contact = () => {
                       placeholder="Message"
                       type="text"
                       name="message"></textarea>
-                    <button type="submit" className="site-btn">
+                    <button
+                      type="submit"
+                      className="site-btn"
+                      formTarget="_blank">
                       {" "}
                       Send Message 
                     </button>
