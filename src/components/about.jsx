@@ -67,9 +67,15 @@ export default function About() {
         <div>
           {" "}
           <a
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                "blank"
+              );
+            }}
             href={Resume}
-            className={style.ResumeBtn}
-            download="Rajendra_Patel_Resume">
+            download="Rajendra_Patel_Resume"
+            className={style.ResumeBtn}>
             <span></span>
             <span></span>
             <span></span>
