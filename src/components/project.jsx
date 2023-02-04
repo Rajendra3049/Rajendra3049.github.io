@@ -201,7 +201,7 @@ export default function Projects() {
               </p>
               <div className={style.project_button_box}>
                 <a
-                  href="https://dispensable-underwear-8715-hxqh.vercel.app/"
+                  href="https://dispensable-underwear-8715.vercel.app/"
                   target="_blank"
                   rel="noreferrer">
                   <button className={style.shrink_on_hover}>
@@ -468,7 +468,7 @@ export default function Projects() {
               </p>
               <div className={style.project_button_box}>
                 <a
-                  href="https://dispensable-underwear-8715-hxqh.vercel.app/"
+                  href="https://dispensable-underwear-8715.vercel.app/"
                   target="_blank"
                   rel="noreferrer">
                   <button className={style.shrink_on_hover}>
