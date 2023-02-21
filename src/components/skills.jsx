@@ -2,6 +2,7 @@ import React from "react";
 import style from "../styles/skills.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Bounce } from "react-reveal";
 
 export default function Skills() {
   React.useEffect(() => {
@@ -10,7 +11,10 @@ export default function Skills() {
   return (
     <>
       <div id="Skills" className={style.outer_box}>
-        <h1 className={style.main_heading}>Technical Skills</h1>
+        <Bounce bottom>
+          <h1 className={style.main_heading}>Technical Skills</h1>
+        </Bounce>
+
         <div className={style.main_box}>
           <div>
             <h1>Languages</h1>

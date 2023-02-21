@@ -5,8 +5,9 @@ import "aos/dist/aos.css";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Resume from "../resume/Rajendra_Patel_Resume.pdf";
-
 import Typewriter from "typewriter-effect";
+import BookType from "./booktype";
+import LightSpeed from "react-reveal/LightSpeed";
 
 export default function About() {
   React.useEffect(() => {
@@ -16,10 +17,15 @@ export default function About() {
   return (
     <div id="About" className={style.homepage}>
       <div className={style.image}>
-        <img src="./profile.jpg" alt="" />
+        {/* <img src="./profile.jpg" alt="" /> */}
+
+        <BookType />
       </div>
       <div className={style.name}>
-        <h1 data-aos="zoom-out">Hi,</h1>
+        <LightSpeed right>
+          <h1>Hi,</h1>
+        </LightSpeed>
+
         <h1>
           {" "}
           <Typewriter
@@ -56,14 +62,18 @@ export default function About() {
         </div>
 
         {/* <h1>Frontend Developer</h1> */}
-        <p>
-          A highly motivated Front Developer with extensive knowledge of
-          HTML,CSS,JavaScript, React js,and Next js. Experienced in developing,
-          testing, and deploying frontend applications. Highly organized and
-          detail-oriented, with the ability to quickly understand complex
-          requirements and work in a fast paced environment. Dedicated to
-          providing excellent customer service and meeting project deadlines.
-        </p>
+        <LightSpeed Right>
+          <p>
+            A highly motivated Front Developer with extensive knowledge of
+            HTML,CSS,JavaScript, React js,and Next js. Experienced in
+            developing, testing, and deploying frontend applications. Highly
+            organized and detail-oriented, with the ability to quickly
+            understand complex requirements and work in a fast paced
+            environment. Dedicated to providing excellent customer service and
+            meeting project deadlines.
+          </p>
+        </LightSpeed>
+
         <div>
           {" "}
           <a

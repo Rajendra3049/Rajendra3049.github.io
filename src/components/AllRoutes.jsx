@@ -1,15 +1,20 @@
-import { Routes, Route } from "react-router-dom";
+import React, { Fragment } from "react";
 import About from "./about";
 import Skills from "./skills";
+import GithubStats from "./github_stats";
+import Projects from "./project";
+import Contact from "./contactForm/Contact.jsx";
 
 export default function AllRoutes() {
   return (
-    <div style={{ width: "70%", margin: "auto" }}>
-      {" "}
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/" element={<Skills />} />
-      </Routes>
-    </div>
+    <>
+      <About />
+      <Skills />
+      <GithubStats />
+      <Projects />
+      <Fragment>
+        <Contact />
+      </Fragment>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import "./Contact.css";
+import { Bounce } from "react-reveal";
 
 const Contact = () => {
   return (
@@ -8,7 +9,9 @@ const Contact = () => {
       <Fragment>
         <section className="contact">
           <div className="contact-heading">
-            <h2>Contact Me </h2>
+            <Bounce bottom>
+              <h2>Contact Me </h2>
+            </Bounce>
           </div>
           <div className="container">
             <div className="row">
@@ -68,7 +71,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="row">
+            {/* <div className="row">
               <div className="map-column">
                 <div className="contact-map">
                   <iframe
@@ -81,7 +84,7 @@ const Contact = () => {
                     style={{ border: 0 }}></iframe>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </Fragment>
