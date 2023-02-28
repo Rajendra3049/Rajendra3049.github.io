@@ -81,7 +81,7 @@ export default function Simple() {
                         to={link}
                         smooth={true}
                         duration={500}
-                        offset={-50}
+                        offset={-90}
                         key={link}
                         px={2}
                         rounded={"md"}

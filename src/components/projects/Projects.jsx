@@ -8,8 +8,8 @@ const Projects = () => {
     <Box id="Projects" w={"90%"} m="auto" mt={"3%"}>
       <Heading
         textAlign={"center"}
-        fontSize={{ base: "", md: "40px" }}
-        fontWeight={{ base: "", md: "semibold" }}
+        fontSize={{ base: "30px", md: "40px" }}
+        fontWeight={{ base: "semibold", md: "semibold" }}
         mb="2%">
         Featured Projects
       </Heading>

@@ -143,7 +143,7 @@ const NavItem = ({ icon, children, onClose, ...rest }) => {
       to={children}
       smooth={true}
       duration={1000}
-      offset={-50}
+      offset={-80}
       style={{ textDecoration: "none" }}
       _focus={{ boxShadow: "none" }}
       onClick={onClose}>
