@@ -6,11 +6,16 @@ import Zoom from "react-reveal/Zoom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useColorMode } from "@chakra-ui/react";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export default function GithubStats() {
   React.useEffect(() => {
     AOS.init();
   }, []);
+  const { colorMode } = useColorMode();
+
   return (
     <>
       {" "}
@@ -22,13 +27,21 @@ export default function GithubStats() {
         <div className={style.flex_box}>
           <div data-aos="fade-right">
             <img
-              src="https://github-readme-stats.vercel.app/api?username=rajendra3049&show_icons=true&locale=en"
+              src={
+                colorMode === "dark"
+                  ? "https://github-readme-stats.vercel.app/api?username=rajendra3049&show_icons=true&locale=en&theme=tokyonight"
+                  : "https://github-readme-stats.vercel.app/api?username=rajendra3049&show_icons=true&locale=en"
+              }
               alt="stats"
             />
           </div>
           <div data-aos="fade-left">
             <img
-              src="https://github-readme-streak-stats.herokuapp.com/?user=rajendra3049&"
+              src={
+                colorMode === "dark"
+                  ? "https://streak-stats.demolab.com/?user=rajendra3049&theme=dark"
+                  : "https://streak-stats.demolab.com/?user=rajendra3049"
+              }
               alt="contribution"
             />
           </div>
@@ -46,7 +59,7 @@ export default function GithubStats() {
         <Bounce bottom>
           <h1 className={style.main_heading}>Github Contribution Graph</h1>
         </Bounce>
-        <div className={style.Calendar}>
+        <div className={style.graph}>
           <Zoom left>
             <img
               src="https://github-readme-activity-graph.cyclic.app/graph?username=Rajendra3049&theme=gotham"

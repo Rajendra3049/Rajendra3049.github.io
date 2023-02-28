@@ -1,10 +1,13 @@
 import React, { Fragment } from "react";
 import "./Contact.css";
 import { Bounce } from "react-reveal";
+import { useColorMode } from "@chakra-ui/react";
 
 const Contact = () => {
+  const { colorMode } = useColorMode();
+
   return (
-    <div id="Contact">
+    <div id="Contact" style={{ color: "black" }}>
       {" "}
       <Fragment>
         <section className="contact">
@@ -71,20 +74,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="row">
-              <div className="map-column">
-                <div className="contact-map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29129.23776238196!2d79.58294376970623!3d24.13120400177718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398212fbbdab25bb%3A0x40e79685b558abc1!2sHatta%2C%20Madhya%20Pradesh%20470775!5e0!3m2!1sen!2sin!4v1673895165396!5m2!1sen!2sin"
-                    width="100%"
-                    height="450"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    style={{ border: 0 }}></iframe>
-                </div>
-              </div>
-            </div> */}
           </div>
         </section>
       </Fragment>

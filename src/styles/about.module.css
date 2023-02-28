@@ -28,20 +28,17 @@
 
 .homepage > div:nth-child(1) {
   width: 40%;
+  height: 400px; /* set the height of the box */
+  overflow: hidden; /* hide any overflow */
 }
 .homepage > div:nth-child(2) {
   width: 70%;
 }
 
-.image {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
 .image > img {
-  width: 70%;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .name {
@@ -285,66 +282,60 @@
   }
 }
 
-@media (max-width: 720px) {
+/* medium screen */
+
+@media (min-width: 761px) and (max-width: 1200px) {
   .homepage {
     border: 0px solid red;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 35% 65%;
     justify-content: center;
     height: auto;
-    padding: 20px;
-    padding-top: 70px;
-  }
-  .homepage > div {
     width: 100%;
-    padding-top: 0px;
-    margin: auto;
+    padding-top: 70px;
+    gap: 5px;
   }
   .homepage > div:nth-child(1) {
-    /* border: 1px solid green; */
     width: 100%;
-    margin-top: 10px;
-    /* display: flex; */
-    /* background-image: url("../img/Blue\ Aqua\ Minimalist\ Sea\ Soothes\ the\ Soul\ Quote\ Instagram\ Post.png"); */
-  }
-
-  .homepage > div:nth-child(1) > img {
-    width: 50%;
   }
   .homepage > div:nth-child(2) {
-    /* border: 1px solid green; */
     width: 100%;
-    /* display: flex; */
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .homepage > div:nth-child(1) {
+    width: 100%;
+    height: 350px; /* set the height of the box */
+    overflow: hidden; /* hide any overflow */
+  }
+  .homepage > div:nth-child(2) {
+    width: 100%;
   }
 
   .image > img {
-    width: 70%;
-    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
+
   .name > h1:nth-child(1) {
     padding-top: 0px;
   }
 
   .name > h1:nth-child(1),
   .name > h1:nth-child(2) {
-    font-size: 20px;
-    margin: 0px;
-    margin-left: 10px;
+    font-size: 180%;
   }
 
-  .name > h1:nth-child(3) {
-    margin-left: 10px;
-    font-size: 20px;
-  }
   .name > p {
-    margin: 10px;
-    font-size: medium;
+    margin: 5px;
+    font-size: 100%;
     color: white;
-    margin-right: 5px;
+    margin-bottom: -10px;
   }
   .ResumeBtn {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .flip {
     /* border: 2px solid teal; */
@@ -355,9 +346,10 @@
   }
 }
 
-@media (max-width: 420px) {
+/* small screen */
+@media (max-width: 760px) {
   .homepage {
-    border: 0px solid red;
+    border: px solid red;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
@@ -375,22 +367,23 @@
     /* border: 1px solid green; */
     width: 100%;
     margin-top: 10px;
-    /* display: flex; */
-    /* background-image: url("../img/Blue\ Aqua\ Minimalist\ Sea\ Soothes\ the\ Soul\ Quote\ Instagram\ Post.png"); */
   }
 
-  .homepage > div:nth-child(1) > img {
-    width: 50%;
-  }
   .homepage > div:nth-child(2) {
     /* border: 1px solid green; */
     width: 100%;
     /* display: flex; */
   }
 
+  .homepage > div:nth-child(1) {
+    width: 100%;
+    height: 350px; /* set the height of the box */
+    overflow: hidden; /* hide any overflow */
+  }
   .image > img {
-    width: 70%;
-    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   .name > h1:nth-child(1) {
     padding-top: 0px;

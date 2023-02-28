@@ -6,7 +6,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Resume from "../resume/Rajendra_Patel_Resume.pdf";
 import Typewriter from "typewriter-effect";
-import BookType from "./booktype";
 import LightSpeed from "react-reveal/LightSpeed";
 
 export default function About() {
@@ -17,15 +16,13 @@ export default function About() {
   return (
     <div id="About" className={style.homepage}>
       <div className={style.image}>
-        {/* <img src="./profile.jpg" alt="" /> */}
-
-        <BookType />
+        {/* <BookType /> */}
+        <img src="./profile.jpg" alt="profile_img" />
       </div>
       <div className={style.name}>
         <LightSpeed right>
           <h1>Hi,</h1>
         </LightSpeed>
-
         <h1>
           {" "}
           <Typewriter
@@ -37,7 +34,7 @@ export default function About() {
             }}
           />
         </h1>
-        {/* <h1>I'm Rajendra Patel</h1> */}
+
         <div className={style.flipBox}>
           <div className={style.flip}>
             <div>
