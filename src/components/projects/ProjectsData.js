@@ -2,7 +2,6 @@ export const projectsData = [
   {
     project_img: "./wishkart.png",
     project_img_dark: "./wishkart_dark.png",
-
     title: "WishKart.com",
     description:
       "This was a group project. The Tech stack which we used to create this website are Javascript, React, Redux, and also used Chakra for UI. My role was to create Sign-In/Sign-Out with backend authentication,Admin Side to manage the website. This was a collaborative project built by a team of 5 members in 5 days.",

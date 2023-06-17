@@ -61,13 +61,12 @@ export default function About() {
         {/* <h1>Frontend Developer</h1> */}
         <LightSpeed Right>
           <p>
-            A highly motivated Front Developer with extensive knowledge of
-            HTML,CSS,JavaScript, React js,and Next js. Experienced in
-            developing, testing, and deploying frontend applications. Highly
-            organized and detail-oriented, with the ability to quickly
-            understand complex requirements and work in a fast paced
-            environment. Dedicated to providing excellent customer service and
-            meeting project deadlines.
+            Experienced MERN Stack developer with 1 month of hands-on
+            experience. Proficient in coding and building websites using MERN
+            stack and other web technologies. Strong problem-solving skills and
+            collaborative mindset. Committed to leveraging my skills and
+            experience to contribute to the development of high-quality
+            websites.
           </p>
         </LightSpeed>
 
@@ -88,6 +87,21 @@ export default function About() {
             <span></span>
             <span></span>
             Resume
+          </a>
+          <a
+            href="#"
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                "_blank"
+              );
+            }}
+            className={style.ResumeBtn}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            View Resume
           </a>
           {/*  */}
           <a

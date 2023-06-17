@@ -7,7 +7,6 @@ import {
   useColorModeValue,
   useColorMode,
   Text,
-  Container,
 } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
@@ -16,14 +15,17 @@ import About from "../about";
 import SideDrawerNavbar from "./SideDrawerNavbar";
 import Resume from "../../resume/Rajendra_Patel_Resume.pdf";
 import Skills from "../skills";
-import GithubStats from "../github_stats";
 import Projects from "../projects/Projects";
 import Contact from "../contactForm/Contact";
+import ThankYou from "../Thankyou/thankyou";
 
 const Links = ["About", "Skills", "Projects", "Contact", "Resume"];
 
 export default function Simple() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const active = {
+    color: "red",
+  };
   return (
     <Box w="100%" overflowX="hidden">
       <Box
@@ -85,6 +87,8 @@ export default function Simple() {
                         key={link}
                         px={2}
                         rounded={"md"}
+                        activeStyle={{ color: "red" }}
+                        spy={true}
                         _hover={{
                           textDecoration: "none",
                         }}>
@@ -120,10 +124,10 @@ export default function Simple() {
       <Box w="full" margin={"auto"}>
         <About />
         <Skills />
-        <GithubStats />
         <Projects />
         <Fragment>
           <Contact />
+          <ThankYou />
         </Fragment>
       </Box>
     </Box>

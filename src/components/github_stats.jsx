@@ -55,7 +55,7 @@ export default function GithubStats() {
           <GitHubCalendar username="rajendra3049" />
         </div>
       </div>
-      <div className={style.outer_box}>
+      {/* <div className={style.outer_box}>
         <Bounce bottom>
           <h1 className={style.main_heading}>Github Contribution Graph</h1>
         </Bounce>
@@ -67,7 +67,7 @@ export default function GithubStats() {
             />
           </Zoom>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

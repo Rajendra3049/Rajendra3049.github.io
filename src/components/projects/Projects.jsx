@@ -5,7 +5,7 @@ import { projectsData } from "./ProjectsData";
 
 const Projects = () => {
   return (
-    <Box id="Projects" w={"90%"} m="auto" mt={"3%"}>
+    <Box id="Projects" w={"90%"} m="auto" mt={"2%"}>
       <Heading
         textAlign={"center"}
         fontSize={{ base: "30px", md: "40px" }}

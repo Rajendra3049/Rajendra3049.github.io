@@ -3,6 +3,7 @@ import style from "../styles/skills.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Bounce } from "react-reveal";
+import GithubStats from "./github_stats";
 
 export default function Skills() {
   React.useEffect(() => {
@@ -110,6 +111,7 @@ export default function Skills() {
             </p>
           </div>
         </div>
+        <GithubStats />
       </div>
     </>
   );
