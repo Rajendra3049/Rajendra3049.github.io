@@ -88,7 +88,7 @@ function SideDrawerNavbar() {
                         onClick={() => {
                           console.log("resume btn clicked");
                           window.open(
-                            "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                            "https://drive.google.com/file/d/1W0rZL0tiyd4iOuqErdCRDEqNpXgqni8b/view?usp=sharing",
                             "blank"
                           );
                         }}
