@@ -75,7 +75,7 @@ export default function About() {
           <a
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                "https://drive.google.com/file/d/1W0rZL0tiyd4iOuqErdCRDEqNpXgqni8b/view?usp=sharing",
                 "blank"
               );
             }}
@@ -92,7 +92,7 @@ export default function About() {
             href="#"
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                "https://drive.google.com/file/d/1W0rZL0tiyd4iOuqErdCRDEqNpXgqni8b/view?usp=sharing",
                 "_blank"
               );
             }}
